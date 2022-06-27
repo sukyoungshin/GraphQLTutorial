@@ -2,7 +2,7 @@ const { gql } = require("apollo-server");
 
 const typeDefs = gql`
   type Query {
-    tracks: [Track!]
+    TracksForHome: [Track!]
   }
 
   type Track {
@@ -15,6 +15,7 @@ const typeDefs = gql`
   }
 
   type Author {
+    id: Int
     name: String
     photo: String
   }

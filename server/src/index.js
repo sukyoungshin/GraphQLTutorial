@@ -2,11 +2,12 @@ const { ApolloServer } = require("apollo-server");
 const typeDefs = require("./schema");
 
 const mocks = {
-  Track: () => ({
+  TracksForHome: () => ({
     id: () => "track_01",
     title: () => "Astro Kitty, Space Explorer",
     author: () => {
       return {
+        id: () => 111,
         name: "Grumpy Cat",
         photo:
           "https://res.cloudinary.com/dety84pbu/image/upload/v1606816219/kitty-veyron-sm_mctf3c.jpg",
